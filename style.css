@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.cursor:hover{
+    cursor: pointer;
+}
+.headsection{
+    height: 420px;
+    width: 100%;
+    background-image: url('home-image.avif');
+    margin-bottom: 20px;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    height: 72px;
+    font-size: 1.2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar .box1{
+    font-size: 0.85rem;
+    width: 40%;
+    margin-left: -60px;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mainlogo{
+    background-image: url('zomato-logo.avif');
+    height: 60px;
+    background-size: contain;
+    width: 280px;
+}
+.nav-msg{
+    font-size: 2.2rem;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+}
+.search{
+    height: 52px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 800px;
+    border-radius: 5px;
+}
+
+select{
+    width: 176px;
+    border: none;
+    opacity: 0.8;
+}
+.locationicon{
+    color: red;
+    padding: 0px 0px 3px 6px;
+    opacity: 0.7;
+}
+.searchicon{
+    color: black;
+    padding: 0px 5px;
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+input[type = search]{
+    border: none;
+    width: 100%;
+    height: 48px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.borderleft{
+    border: 1px solid black;
+    height: 18px;
+    opacity: 0.4;
+}
+
+/* content section */
+.content{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px ;
+    height: 60vh;
+    flex-wrap: wrap;
+}
+.items{
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.items:hover{
+    scale: 1.03;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.second{
+    padding: 10px 20px;
+    border: 0.7px solid rgb(177, 174, 174);
+    border-top: none;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.img{
+    height: 75%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tag{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    height: 1.3rem;
+    width: 100%;
+    overflow: hidden;
+}
+.second > p{
+    opacity: 0.8;
+    width: 100%;
+    height: 1.2rem;
+    overflow:hidden;
+}
+/* Collections */
+.collections{
+    padding: 50px;
+}
+.collections>p{
+    margin: 13px;
+}
+.containers{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.collectionbox{
+    width: 23%;
+    height: 320px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+.collectionbox i{
+    margin-left: 10px;
+}
+.names{
+    font-size: 1.2rem;
+    height: 1.3rem;
+    width: 100%;
+    overflow: hidden;
+}
+.collectionh2{
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin-left: 10px;
+}
+.collections a{
+    color: red;
+    opacity: 0.8;
+    position: absolute;
+    right: 80px;
+}
+
+/* Cities section */
+.cities{
+    padding: 50px;
+}
+.cityh2{
+    font-size: 2.2rem;
+    font-weight: 200;
+    padding-left: 10px ;
+    margin-bottom: 15px;
+}
+.citybox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cityname{
+    border: 1px solid rgb(219, 216, 216);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+}
+
+.cityname:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px;
+}
+.caret{
+    display: flex;
+    align-items: center;
+}
+.seemore{
+    height: 2.2rem;
+}
+
+/* Details section */
+.appsection{
+    display: flex;
+    /* margin: 50px; */
+    height: 400px;
+    width: 100%;
+    background-color: rgb(255, 251, 247);
+}
+.geth2{
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.mobile{
+    display: flex;
+    height: 400px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.mobileimg{
+    background-image: url('img8.avif');
+    height: 230px;
+    width: 40%;
+    background-size: cover;
+    position: relative;
+    left: 100px;
+}
+.radiobutton{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px double black;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: red;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.input {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.inputbtn input , button{
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.inputbtn input{
+    width: 50%;
+    margin-right: 10px;
+}
+.inputbtn button{
+    background-color: red;
+    opacity: 0.6;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 12px;
+}
+.download{
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+.playstore{
+    display: flex;
+    margin-top: 20px;
+}
+.imgicon1{
+    width: 136px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+/* Explore section */
+.exploresection{
+    padding: 50px;
+}
+.exploreh2{
+    font-size: 2.2rem;
+    font-weight: 200;
+}
+.optiontext{
+    display: flex;
+    padding: 20px 24px;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    border: 1px solid rgb(216, 210, 210);
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* footer section */
+footer{
+    padding: 50px;
+    background-color:#f4f8f8;
+}
+.foot1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.logodiv{
+    width: 70%;
+}
+.logo{
+    width: 132px;
+    height: 28px;
+    background-image: url('img11.avif');
+    background-size: cover;
+}
+.footselect{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 5px ;
+    margin: 10px;
+}
+.footselect select{
+    font-size: 1.2rem;
+}
+.footselect i{
+    margin: 3px;
+}
+.flag{
+    margin: 5px;
+    width: 20px;
+    height: 14px;
+    background-image: url('india.png');
+    background-size: cover;
+}
+/* foot2 section */
+.foot2{
+    display: flex;
+    font-size: 0.85rem;
+    justify-content: space-between;
+}
+ul li{
+    list-style: none;
+    opacity: 0.8;
+    margin-top: 10px;
+    cursor: pointer;
+}
+ul p{
+    margin-top: 20px;
+    opacity: 1;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.socaildiv{
+    margin-top: 20px;
+}
+.socaildiv p{
+    opacity: 1;
+    letter-spacing: 2px;
+}
+.socaildiv .playstore{
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+    margin-top: 0;
+}
+.socaildiv .imgicon1{
+    margin-top: 10px ;
+}
+.socialicons i{
+    margin-top: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.line{
+    height: 1px;
+    margin: 20px;
+    border-bottom: 1px solid grey;
+}
+.copysection{
+    font-size: 0.85rem;
+    color: grey;
+}
